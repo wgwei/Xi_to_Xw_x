@@ -48,7 +48,7 @@ def Ri_to_Rw_x(Ri):
             RwRefT = RwRef + shift
             sumUnfavDevi = sum_unfav_deviation(Ri, RwRefT)
         Rw = RwRefT[LOC500HZ]
-    elif sumUnfavDevi<=10:
+    else:
         while sumUnfavDevi <= UNFAVLIMIT:
 #            print ("shift-> ", shift)
             shift  = shift + 1
